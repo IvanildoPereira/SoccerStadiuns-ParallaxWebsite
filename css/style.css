@@ -1,0 +1,122 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    line-height: 1.8em;
+    color: #666;
+}
+
+/* background images config*/
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /*
+        fixed = paralax
+        scroll = normal    
+    */
+    background-attachment: fixed;
+}
+
+
+/*Put Images background*/
+    /* Pacaembu image */
+    .pimg1{
+        background-image:url('../img/image1.png');
+        height: 100vh;
+
+    }
+
+    /* Allianz Parque image */
+    .pimg2{
+        background-image:url('../img/image2.jpg');
+        height: 100vh;
+        
+    }
+
+    /* Itaquerao image */
+    .pimg3{
+        background-image:url('../img/image3.jpg');
+        height: 100vh;
+        
+    }
+
+    /* Morumbi image */
+    .pimg4{
+        background-image:url('../img/image4.jpg');
+        height: 100vh;
+        
+    }
+
+    /* Santos image */
+    .pimg5{
+        background-image:url('../img/image5.jpg');
+        height: 100vh;
+        
+    }
+
+/* Sections */
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+    /* Sections Background*/
+    .section-light{
+        background-color: #f4f4f4;
+        color: #666;
+    }
+
+    .section-dark{
+        background-color: #282e34;
+        color: #ddd; 
+    }
+
+    .section-green{
+        background-color: #32CD32;
+        color: #fff;
+    }
+
+    .section-red{
+        background-color:#FF0000
+        ;
+        color: #fff;
+    }
+
+/*Images Text*/    
+.ptext{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Footer */
+#footer{
+    text-align: center;
+    background-color: #1C5183;
+    color:#fff;
+}
+
+/* Media queries */
+@media(max-widht: 580px){
+    .pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
+        background-attachment: scroll;
+    }
+}
